@@ -1,7 +1,7 @@
 # Trash Classification Using Convolutional Neural Networks
 1. To install required libraries: pip install -r requirements.txt
 2. To train the model from scratch:
-a. Data augmentation:
+a. Data augmentation:\n
     train_gen = tf.keras.preprocessing.image.ImageDataGenerator(
         width_shift_range=0.1,height_shift_range=0.1, rotation_range=45, zoom_range=0.1,
         horizontal_flip=True,vertical_flip=True)
