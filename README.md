@@ -34,7 +34,7 @@
         model = AlexNetCE()
         model.compile(optimizer=tf.keras.optimizers.Adam(learning_rate=0.000005), 
                     loss='categorical_crossentropy', metrics=['accuracy'])
-4. Inference:  
+## Inference:  
 
         error = [0,0,0,0,0,0]
         mislabel = np.zeros((6,6))
@@ -89,7 +89,7 @@ The result of model inference is shown as below:
         Mostly mislabeled as: 1
     % of mislabeled trash: 0.35294117647058826
         Mostly mislabeled as: 2
-5. Model evaluation: 
+## Model evaluation: 
 
         for i in range(10):
             print("Training Process "+str(len(train_loss)))
